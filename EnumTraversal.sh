@@ -19,6 +19,7 @@ else
     wget $1=../../../etc/hostname -O Validation.txt
     pause 2s
     Validation=$(cat Validation.txt)
+    rm Validation.txt
     if [ "$Validation" != "" ];
         echo "The application is vulnerable to Path traversal"
     else
