@@ -20,8 +20,9 @@ else
     pause 2s
     Validation=$(cat Validation.txt)
     rm Validation.txt
-    if [ "$Validation" != "" ];
+    if [ "$Validation" != "" ]; then
         echo "The application is vulnerable to Path traversal"
     else
         echo "The application is not vulnerable to Path traversal"
+    fi
 fi
