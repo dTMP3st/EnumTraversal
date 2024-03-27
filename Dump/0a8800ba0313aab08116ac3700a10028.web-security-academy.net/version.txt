@@ -1,0 +1,1 @@
+Linux version 4.14.336-257.562.amzn2.x86_64 (mockbuild@ip-10-0-43-44) (gcc version 7.3.1 20180712 (Red Hat 7.3.1-17) (GCC)) #1 SMP Sat Feb 24 09:50:35 UTC 2024

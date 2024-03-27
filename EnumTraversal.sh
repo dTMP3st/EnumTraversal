@@ -4,9 +4,9 @@ clear
 
 BannerFunction(){
 	echo "		+==================================================+"
-	echo "		|			EnumTraversal              |"
-	echo "		|	        dTMP3st - Cyber Strike Force	   |"
-	echo "		|	   	       Version - 1.0               |"
+	echo "		|			                EnumTraversal                  |"
+	echo "		|	           dTMP3st - Cyber Strike Force	         |"
+	echo "		|	   	              Version - 1.0                  |"
 	echo "		+==================================================+"
 }
 
@@ -34,7 +34,10 @@ else
         done
         echo ""
         echo "  [*] Enumerated system user:"
-        cat Dump/$Path/passwd.txt | grep "/home" | cut -d ":" -f1
+        System_User=$(cat Dump/$Path/passwd.txt)
+        echo "$System_User" | grep "/home" | cut -d ":" -f1
+        echo "  [*] Enumerated system users that contain shell access"
+        echo "$System_User" | grep "/bin/bash" | cut -d ":" -f1
     else
         echo "The application is not vulnerable to Path traversal"
     fi
