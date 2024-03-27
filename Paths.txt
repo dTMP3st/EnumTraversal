@@ -1,3 +1,6 @@
+../../../bin/nc
+../../../bin/python
+../../../bin/python3
 ../../../etc/bash.bashrc
 ../../../etc/bindresvport.blacklist
 ../../../etc/crontab
@@ -53,3 +56,4 @@
 ../../../etc/usb_modeswitch.conf
 ../../../etc/wgetrc
 ../../../etc/xattr.conf
+../../../proc/version
