@@ -38,6 +38,8 @@ else
         echo "$System_User" | grep "/home" | cut -d ":" -f1
         echo "  [*] Enumerated system users that contain shell access"
         echo "$System_User" | grep "/bin/bash" | cut -d ":" -f1
+        echo ""
+        echo "  [*] Binaries feature on target"
     else
         echo "The application is not vulnerable to Path traversal"
     fi
