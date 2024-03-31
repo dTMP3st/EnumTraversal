@@ -41,6 +41,7 @@ else
         echo "$System_User" | grep "/bin/bash" | cut -d ":" -f1
         echo ""
         echo "  [*] Binaries feature on target"
+        echo "  [*] Network configuration"
     else
         echo "The application is not vulnerable to Path traversal"
     fi
