@@ -43,6 +43,7 @@ else
         echo "  [*] Binaries feature on target"
         echo "  [*] Network configuration"
         echo "  [*] Operating system structure"
+        echo "  [*] Web Server files"
     else
         echo "The application is not vulnerable to Path traversal"
     fi
